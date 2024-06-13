@@ -54,6 +54,21 @@ The baseline's implementation code is under the  ```DependencyPrediction\```  fo
 
 The baseline's implementation code is under the  ```VulnerabilityDetection\```  folder.
 
+## Response
+<p>
+    Figure S1: The prompt template for VulEval.
+    <img src="prompt.png" alt="ReposVul Logo" >
+</p>
+
+Table S1: The number of related CVE entries, dependency and function tokens in each split, respectively.
+
+| Set | CVE Entries| Dependency Tokens | Function Tokens |
+| ---- | --- | ---------- | -------- |
+| train | 3393 / 2747 | 866.58 / 881.88 | 321.44 / 320.94 |
+| valid | 2895 / 335 | 861.26 / 775.25 | 315.9 / 307.3 |
+| test | 2895 / 328 | 824.87 / 834.36 | 317.7 / 330.3 |
+| total | 3405 / 3405 | 862.05 / 862.05 | 320.51 / 320.51 |
+
 
 ## Baselines
 ```
