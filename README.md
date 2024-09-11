@@ -15,8 +15,7 @@
 
 <div align="center">
   <a>
-    <b><em>More than Single Functions: Towards Holistic 
-    Evaluation of <br>Software Vulnerability Detection</em></b>
+    <b><em>Towards Evaluation of Software Vulnerability Detection</em></b>
   </a>
   <br></br>
   
@@ -33,13 +32,6 @@ Dataset is available at:
 ```bash
 https://drive.google.com/file/d/1szQ9FnIC_onQRu_TjZ2uofkjv9z_s4pv/view?usp=drive_link
 ```
-
-## 🚨 Abstract
-
-Deep Learning (DL)-based methods have proven to be effective for software vulnerability detection, with a potential for substantial productivity enhancements for detecting vulnerabilities. Current methods mainly focus on detecting single functions (i.e., intra-procedural vulnerabilities, ignoring the more complex inter-procedural vulnerability detection scenarios in practice.  For examples, developers routinely engage with program analysis to detect vulnerabilities that span multiple functions within repositories. In addition, the widely-used benchmark datasets generally contain only intra-procedural vulnerabilities, leaving the assessment of inter-procedural vulnerability detection capabilities unexplored.
-
-To mitigate the issues, we propose a holistic multi-level evaluation system, named **VulEval**, aiming at evaluating the detection performance of inter- and intra-procedural vulnerabilities simultaneously.Specifically, VulEval consists of three interconnected evaluation tasks: 
-**(1) Function-Level Vulnerability Detection**, aiming at detecting intra-procedural vulnerability given a code snippet; **(2) Vulnerability-Related Dependency Prediction**, aiming at selecting the most relevant dependencies for providing developers with explanations about the vulnerabilities; and **(3) Repository-Level Vulnerability Detection**, aiming at detecting inter- and intra-procedural vulnerabilities simultaneously. For exploring the current vulnerability detection methods' performance in the third task, we propose a repository-level vulnerability detection framework by combining with the dependencies identified in the second task. \tool also consists of a large-scale dataset, with a total of 4,196 CVE entries, 232,239 functions, and corresponding 4,699 repository-level source code in C/C++ programming languages.
 
 ## Implementation
 ⚖️ **Function-Level Vulnerability Detection**
