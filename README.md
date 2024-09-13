@@ -15,7 +15,7 @@
 
 <div align="center">
   <a>
-    <b><em>Towards Evaluation of Software Vulnerability Detection</em></b>
+    <b><em>From Function to Repository: Towards Repository-Level Evaluation of Software Vulnerability Detection</em></b>
   </a>
   <br></br>
   
