@@ -48,18 +48,68 @@ The baseline's implementation code is under the  ```VulnerabilityDetection\```  
 
 ## Response
 <p>
+    Table S1:  Dependency overview of vulnerability samples for VulEval.
+</p>
+
+| Metric | Same File | Different File | All   | Same File Ratio   |
+|--------|-----------|----------------|-------|---------|
+| Train  | 5711      | 8497           | 14208 | 40.20%  |
+| Eval   | 673       | 991            | 1664  | 40.44%  |
+| Test   | 673       | 851            | 1524  | 44.16%  |
+| All    | 7057      | 10339          | 17396 | 40.57%  |
+
+<p>
     Figure S1: The prompt template for VulEval.
     <img src="prompt.png" alt="Logo" >
 </p>
 
-Table S1: The number of related CVE entries, dependency and function tokens in each split, respectively.
+<p>
+    Table S2:  Distribution overview of CWE types in Test set.
+</p>
 
-| Set | CVE Entries| Dependency Tokens | Function Tokens |
-| ---- | --- | ---------- | -------- |
-| train | 3393 / 2747 | 866.58 / 881.88 | 321.44 / 320.94 |
-| valid | 2895 / 335 | 861.26 / 775.25 | 315.9 / 307.3 |
-| test | 2895 / 328 | 824.87 / 834.36 | 317.7 / 330.3 |
-| total | 3405 / 3405 | 862.05 / 862.05 | 320.51 / 320.51 |
+| CWE-id   | Ratio  |
+|----------|--------|
+| CWE-190  | 42.33% |
+| CWE-787  | 16.93% |
+| CWE-416  | 15.52% |
+| CWE-125  | 6.88%  |
+| CWE-400  | 5.47%  |
+| CWE-476  | 3.17%  |
+| CWE-200  | 2.12%  |
+| CWE-22   | 2.12%  |
+| CWE-119  | 1.59%  |
+| CWE-863  | 1.59%  |
+
+
+<p>
+    Table S3: T-Test result of CodeT5 and ChatGPT.
+</p>
+
+| Model   | Function | Repository | T-Test P-value |
+|---------|----------|----------|----------------|
+| CodeT5  | 41.80    | 43.29| 1.56e-03       |
+| ChatGPT | 10.44    | 13.69| 1.78e-03       |
+
+
+Table S4: The number of related CVE entries, dependency and function tokens in each split, respectively. The numbers in front of "/" denotes the random split, and after denotes the time-split. 
+
+| Set |Dependency Tokens | Function Tokens |
+| ---- |  ---------- | -------- |
+| train | 866.58 / 881.88 | 321.44 / 320.94 |
+| valid | 861.26 / 775.25 | 315.9 / 307.3 |
+| test | 824.87 / 834.36 | 317.7 / 330.3 |
+| total |  862.05 / 862.05 | 320.51 / 320.51 |
+
+<p>
+    Table S5:  Statistics of the dataset. 
+</p>
+
+| Set | Non-Vul | Defective | Total  | Ratio  |
+|--------|-----------|-----------|--------|--------|
+| Train  | 180259    | 5532      | 185791 | 32.58:1 |
+| Eval   | 22503     | 721       | 23224  | 31.21:1 |
+| Test   | 22554     | 670       | 23224  | 33.66:1 |
+| All    | 225316    | 6923      | 232239 | 32.55:1 |
 
 
 ## Baselines
